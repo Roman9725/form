@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>form</title>
+
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- 
+    <div class="fullWrap">
+        <div class="subWrap">
+            
+        </div>
+    </div> 
+    -->
+	</head>
+	<body>
+		<div class="fullWrap">
+			<div class="subWrap">
+				<header>
+					<h1>freeCodeCamp Survey Form</h1>
+					<p>Thank you for taking the time to help us improve the platform</p>
+				</header>
+				<div class="formContaier">
+					<form action="post">
+						<label for="username">Name</label><br />
+						<input
+							class="fullW"
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter your name"
+						/>
+
+						<label for="email">Email</label><br />
+						<input
+							class="fullW"
+							type="text"
+							name="email"
+							id="email"
+							placeholder="Enter your Email"
+						/>
+
+						<label for="age">Age</label><br />
+						<input
+							class="fullW"
+							type="number"
+							name="age"
+							id="name"
+							placeholder="Age"
+						/>
+
+						<label for="currentRole"
+							>Which option best describes your current role?</label
+						><br />
+						<select class="fullW" name="currentRole" id="currentRole">
+							<option value="" selected disabled hidden
+								>Select Current Role</option
+							>
+							<option value="student">Student</option>
+							<option value="job">Full Time Job</option>
+							<option value="lerner">Full Time Lerner</option>
+							<option value="nottosay">Prefer Not To Say</option>
+							<option value="other">Other</option>
+						</select>
+
+						<div class="boxes">
+							<p for="recommend">
+								Would you recommend freeCodeCamp to a friend?
+							</p>
+							<input
+								type="radio"
+								id="definitely"
+								name="recommend"
+								value="definitely"
+							/>
+							<label for="definitely">Definitely</label><br />
+							<input type="radio" id="maybe" name="recommend" value="maybe" />
+							<label for="maybe">Maybe</label><br />
+							<input
+								type="radio"
+								id="notsure"
+								name="recommend"
+								value="notsure"
+							/>
+							<label for="notsure">Not sure</label><br /><br />
+
+							<p>
+								What is your favorite feature of freeCodeCamp?
+							</p>
+							<select class="fullW" name="ffeature" id="ffeature">
+								<option value="" selected disabled hidden
+									>Select an option</option
+								>
+								<option value="challenges">Challenges</option>
+								<option value="community">Community</option>
+								<option value="projects">Projects</option>
+								<option value="source">Open source</option>
+							</select>
+						</div>
+
+						<p>What would you like to see improved? (Check all that apply)</p>
+						<input
+							type="checkbox"
+							id="frontEnd"
+							name="improvement"
+							value="frontEnd"
+						/>
+						<label for="">Front-end Projects</label><br />
+
+						<input
+							type="checkbox"
+							id="backEnd"
+							name="improvement"
+							value="backEnd"
+						/>
+						<label for="">Back-end Projects</label><br />
+
+						<input type="checkbox" id="data" name="improvement" value="data" />
+						<label for="">Data Visualization</label><br />
+
+						<input
+							type="checkbox"
+							id="challenges"
+							name="improvement"
+							value="challenges"
+						/>
+						<label for="">Challenges</label><br />
+
+						<input
+							type="checkbox"
+							id="community"
+							name="improvement"
+							value="community"
+						/>
+						<label for="">Open Source Community</label><br />
+
+						<input
+							type="checkbox"
+							id="gitter"
+							name="improvement"
+							value="gitter"
+						/>
+						<label for="">Gitter help rooms</label><br />
+
+						<input
+							type="checkbox"
+							id="videos"
+							name="improvement"
+							value="videos"
+						/>
+						<label for="">Videos</label><br />
+
+						<input
+							type="checkbox"
+							id="meetups"
+							name="improvement"
+							value="meetups"
+						/>
+						<label for="">City Meetups</label><br />
+
+						<input type="checkbox" id="wiki" name="improvement" value="wiki" />
+						<label for="">Wiki</label><br />
+
+						<input
+							type="checkbox"
+							id="forum"
+							name="improvement"
+							value="forum"
+						/>
+						<label for="">Forum</label><br />
+
+						<input
+							type="checkbox"
+							id="additional"
+							name="improvement"
+							value="additional"
+						/>
+						<label for="">Additional Courses</label><br />
+						<div class="clearFix"></div>
+						<br />
+						<p>Any comments or suggestions?</p>
+						<textarea
+							class="fullW"
+							placeholder="Enter your comment here..."
+							name="suggestion"
+							id="textArea"
+							cols="30"
+							rows="10"
+						></textarea
+						><br />
+						<input class="fullW submitBtn" type="submit" value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
